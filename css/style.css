@@ -1,0 +1,94 @@
+/*   random images:      https://source.unsplash.com/random    */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/**********************************************
+                Global styles
+**********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #01202c;
+  color: #fff;
+  letter-spacing: 1.5px;
+  position: relative;
+  margin: 42px 0 0 5px;
+  text-shadow: 1px 2px 1px #333;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+input {
+  color: #fff;
+}
+
+h2,
+h4 {
+  color: #26a69a;
+}
+
+h2 {
+  font-size: 2.56rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+li {
+  color: #26a69a;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+span {
+  font-weight: 400;
+  color: #f0f7d4;
+}
+
+.animate-in {
+  position: relative;
+  padding-left: 5px !important;
+  animation: animate-in .3s ease-in;
+}
+
+@keyframes animate-in {
+  from {
+    left: -500px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/**************************************
+            @media Queries
+**************************************/
+
+@media all and (min-width: 576px) {
+  body {
+    margin: 3rem;
+  }
+
+  h2 {
+    font-size: 3.56rem;
+  }
+
+  h4 {
+    font-size: 2.28rem;
+  }
+
+  .animate-in {
+    padding-left: 10px !important;
+  }
+}
